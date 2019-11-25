@@ -31,7 +31,7 @@ def get_proxies():
 
 def save_proxies(text):
 
-    with open('/Users/a1/Desktop/python3_tools/pool/proxy.csv', 'w', newline='') as f:
+    with open('./proxy.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         for row in text:
             # print(row)
@@ -39,7 +39,7 @@ def save_proxies(text):
     print('保存成功')
 
 def randProxy():
-    with open('/Users/a1/Desktop/python3_tools/pool/proxy.csv', 'r') as f:
+    with open('./proxy.csv', 'r') as f:
         proxies = f.read().split('\n')[: -1]
         # print(random.choice(proxies))
         proxy = {
@@ -57,7 +57,7 @@ def randProxy():
 
 
 # def verify():
-#     with open('/Users/a1/Desktop/python3_tools/pool/proxy.csv', 'r') as f:
+#     with open('./proxy.csv', 'r') as f:
 #         proxies = f.read().split('\n')[: -1]
 #     r = requests.get('http://www.ip138.com/', headers = header.randUserAgent(), timeout=7)
 #     if r.status_code != 200:
