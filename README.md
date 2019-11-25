@@ -1,3 +1,2 @@
 # Python-Spider Demos
-## Demo1(TB_spider)
-## Demo2(WB_spider)
+## pool简易代理
